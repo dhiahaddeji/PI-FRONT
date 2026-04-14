@@ -1,0 +1,29 @@
+/* ═══════════════════════════════════════════════════════════════
+   themes.css — Zellige Moderne
+   Dark mode overrides (tokens defined in index.css)
+   ═══════════════════════════════════════════════════════════════ */
+
+[data-theme="dark"] {
+  --bg:         var(--c-teal-900);
+  --surface:    var(--c-teal-800);
+  --surface-2:  var(--c-teal-700);
+  --border:     rgba(168,216,227,0.15);
+
+  --text-1:     #EEF4F6;
+  --text-2:     #9BBCC7;
+  --text-3:     #638899;
+  --placeholder:#456070;
+
+  --input-bg:     var(--c-teal-700);
+  --input-border: rgba(168,216,227,0.20);
+  --input-text:   #EEF4F6;
+
+  --topbar-bg:     var(--c-teal-800);
+  --topbar-border: rgba(168,216,227,0.12);
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.30);
+  --shadow:    0 2px 8px rgba(0,0,0,0.35);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.40);
+
+  /* sidebar always dark — no override needed */
+}

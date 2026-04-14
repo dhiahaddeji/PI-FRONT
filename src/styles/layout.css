@@ -1,0 +1,73 @@
+/* ═══════════════════════════════════════════════════════════════
+   Layout — Zellige Moderne
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Skip link — visually hidden until focused (keyboard nav) */
+.skipLink {
+  position: fixed;
+  top: -999px;
+  left: 8px;
+  z-index: 99999;
+  background: var(--c-teal-800, #0B2D38);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 0 0 10px 10px;
+  text-decoration: none;
+  transition: top 0.15s;
+}
+
+.skipLink:focus {
+  top: 0;
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.layoutMain {
+  margin-left: 240px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100vh;
+}
+
+.pageContent {
+  flex: 1;
+  padding: 28px 32px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ── Page header helpers ─────────────────────────────────────────── */
+.pageHeader {
+  margin-bottom: 24px;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-1);
+  letter-spacing: -0.2px;
+  margin: 0 0 4px;
+}
+
+.pageSubtitle {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-3);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .layoutMain  { margin-left: 0; }
+  .pageContent { padding: 16px; }
+}
